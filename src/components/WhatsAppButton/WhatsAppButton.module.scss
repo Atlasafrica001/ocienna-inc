@@ -1,11 +1,17 @@
 @use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
 
 .whatsappFloat {
   position: fixed;
-  bottom: v.$space-lg;
-  right: v.$space-lg;
+  bottom: v.$space-md;
+  right: v.$space-md;
   width: 60px;
   height: 60px;
+
+  @include m.respond(md) {
+    bottom: v.$space-lg;
+    right: v.$space-lg;
+  }
   background-color: #25d366; // Standard WhatsApp color
   color: v.$color-white;
   border-radius: v.$radius-full;
