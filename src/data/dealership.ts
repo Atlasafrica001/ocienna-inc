@@ -1,8 +1,8 @@
 export const dealership = {
-  name: 'Ociens Motors Nigeria',
+  name: 'Ocean Inc.',
   tagline: 'Premium vehicles. Honest deals. Trusted service.',
   phone: '+234 800 123 4567',
-  email: 'sales@ociens.com.ng',
+  email: 'sales@Ocean Inc..com.ng',
   address: '15 Adeola Odeku St, Victoria Island, Lagos, Nigeria',
   hours: [
     { days: 'Monday - Friday', time: '8:00 AM - 6:00 PM' },

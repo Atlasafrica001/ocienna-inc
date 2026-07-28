@@ -37,7 +37,7 @@ function Contact() {
     <>
       <Seo
         title="Contact Us"
-        description="Get in touch with Ociens Inc. Visit our dealership, call, email, or send us a message directly through our contact form."
+        description="Get in touch with Ocean Inc. Visit our dealership, call, email, or send us a message directly through our contact form."
       />
       <PageHeader
         title="Contact Us"

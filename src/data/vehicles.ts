@@ -22,7 +22,7 @@ export const featuredVehicles: Vehicle[] = [
     seats: '5 Seats',
     transmission: 'Automatic',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/2020_Toyota_Corolla_Altis_1.8_G_interior_and_exterior_in_Central_Plaza_Khon_Kaen%2C_Thailand.jpg/960px-2020_Toyota_Corolla_Altis_1.8_G_interior_and_exterior_in_Central_Plaza_Khon_Kaen%2C_Thailand.jpg',
+      'https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'v2',
@@ -35,7 +35,7 @@ export const featuredVehicles: Vehicle[] = [
     seats: '5 Seats',
     transmission: 'Automatic',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Lexus_RX_350_AWD_%28AL20%29_EX_front.jpg/960px-Lexus_RX_350_AWD_%28AL20%29_EX_front.jpg',
+      'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'v3',
@@ -48,7 +48,7 @@ export const featuredVehicles: Vehicle[] = [
     seats: '7 Seats',
     transmission: 'Automatic',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2018_Toyota_Land_Cruiser_Prado_%28KDJ150R%29_GXL_wagon_%282018-09-17%29_01.jpg/960px-2018_Toyota_Land_Cruiser_Prado_%28KDJ150R%29_GXL_wagon_%282018-09-17%29_01.jpg',
+      'https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'v4',
@@ -61,7 +61,7 @@ export const featuredVehicles: Vehicle[] = [
     seats: '5 Seats',
     transmission: 'Automatic',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/2021_Toyota_Hilux_Invincible_X_D-4D_4WD_Double_Cab_2.8.jpg/960px-2021_Toyota_Hilux_Invincible_X_D-4D_4WD_Double_Cab_2.8.jpg',
+      'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'v5',
@@ -74,7 +74,7 @@ export const featuredVehicles: Vehicle[] = [
     seats: '5 Seats',
     transmission: 'Automatic',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/2018_Honda_Accord_1.5T_EX-L_front_3.24.18.jpg/960px-2018_Honda_Accord_1.5T_EX-L_front_3.24.18.jpg',
+      'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'v6',
@@ -87,7 +87,7 @@ export const featuredVehicles: Vehicle[] = [
     seats: '5 Seats',
     transmission: 'Automatic',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/2019_Mercedes-Benz_GLE_450_AMG_Line_Premium_Plus_4MATIC_3.0_Front.jpg/960px-2019_Mercedes-Benz_GLE_450_AMG_Line_Premium_Plus_4MATIC_3.0_Front.jpg',
+      'https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'v7',
@@ -100,7 +100,7 @@ export const featuredVehicles: Vehicle[] = [
     seats: '5 Seats',
     transmission: 'Automatic',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/2018_Land_Rover_Range_Rover_Vogue_SE_3.0.jpg/960px-2018_Land_Rover_Range_Rover_Vogue_SE_3.0.jpg',
+      'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'v8',
@@ -113,7 +113,7 @@ export const featuredVehicles: Vehicle[] = [
     seats: '5 Seats',
     transmission: 'Automatic',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/2021_Hyundai_Elantra_SEL_in_Portofino_Gray%2C_Front_Left%2C_10-24-2021.jpg/960px-2021_Hyundai_Elantra_SEL_in_Portofino_Gray%2C_Front_Left%2C_10-24-2021.jpg',
+      'https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'v9',
@@ -126,6 +126,6 @@ export const featuredVehicles: Vehicle[] = [
     seats: '14 Seats',
     transmission: 'Manual',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Toyota_Hiace_Commuter_Super_Long_Roof_001.JPG/960px-Toyota_Hiace_Commuter_Super_Long_Roof_001.JPG',
+      'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80',
   },
 ]

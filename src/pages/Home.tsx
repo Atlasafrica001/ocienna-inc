@@ -30,7 +30,7 @@ function Home() {
     <>
       <Seo
         title="Home"
-        description="Ociens Inc. is a premium car dealership offering quality vehicles, flexible financing, and easy test drive booking."
+        description="Ocean Inc. is a premium car dealership offering quality vehicles, flexible financing, and easy test drive booking."
       />
 
       <section className={styles.hero}>
@@ -51,8 +51,8 @@ function Home() {
             </Reveal>
             <Reveal className={styles.heroMedia} delay={120}>
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Car_showroom%2C_Sticker_Lane_-_geograph.org.uk_-_2248223.jpg/960px-Car_showroom%2C_Sticker_Lane_-_geograph.org.uk_-_2248223.jpg"
-                alt="Rows of vehicles for sale on the Ociens Inc. dealership lot"
+                src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1200&q=80"
+                alt="Rows of vehicles for sale on the Ocean Inc. dealership lot"
                 width={960}
                 height={699}
                 loading="eager"
@@ -105,7 +105,7 @@ function Home() {
       <section className={styles.whySection}>
         <Container>
           <SectionHeading
-            title="Why Buyers Choose Ociens"
+            title="Why Buyers Choose Ocean Inc."
             subtitle="Fifteen years of the same four commitments, whether it's your first car or your company's fifth fleet vehicle."
           />
           <div className={styles.whyGrid}>

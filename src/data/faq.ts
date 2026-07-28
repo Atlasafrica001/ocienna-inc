@@ -12,7 +12,7 @@ export const homeFaq: FaqItem[] = [
       'Yes. Bring your Nigerian registered vehicle and customs papers during your visit and our team will provide a same-day trade-in estimate that can be applied toward your next purchase.',
   },
   {
-    question: 'What warranty comes with a vehicle from Ociens Motors Nigeria?',
+    question: 'What warranty comes with a vehicle from Ocean Inc.?',
     answer:
       'Every vehicle we sell includes a limited warranty covering major mechanical components. Extended coverage plans are also available, ask our sales team for details specific to the vehicle you are considering.',
   },

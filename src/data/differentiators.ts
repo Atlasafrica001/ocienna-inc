@@ -25,6 +25,6 @@ export const differentiators: Differentiator[] = [
   {
     icon: 'users',
     title: 'Nigerian-owned since day one',
-    body: 'Local automotive experts founded Ociens Motors in 2011. We understand Nigerian roads and what vehicles survive them.',
+    body: 'Local automotive experts founded Ocean Inc. in 2011. We understand Nigerian roads and what vehicles survive them.',
   },
 ]
