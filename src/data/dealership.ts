@@ -1,9 +1,9 @@
 export const dealership = {
   name: 'Ocean Inc.',
   tagline: 'Premium vehicles. Honest deals. Trusted service.',
-  phone: '+234 800 123 4567',
-  email: 'sales@Ocean Inc..com.ng',
-  address: '15 Adeola Odeku St, Victoria Island, Lagos, Nigeria',
+  phone: '+1 (587) 435-0844',
+  email: 'sales@oceaninc.com',
+  address: '22 Evansbrooke Terrace, NW Calgary, Alberta. T3P 1H1',
   hours: [
     { days: 'Monday - Friday', time: '8:00 AM - 6:00 PM' },
     { days: 'Saturday', time: '10:00 AM - 4:00 PM' },

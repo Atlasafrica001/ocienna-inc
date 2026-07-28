@@ -3,7 +3,7 @@ import styles from './WhatsAppButton.module.scss'
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/2348001234567"
+      href="https://wa.me/15874350844"
       className={styles.whatsappFloat}
       target="_blank"
       rel="noopener noreferrer"
