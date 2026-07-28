@@ -1,0 +1,61 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.steps {
+  display: grid;
+  gap: v.$space-lg;
+  grid-template-columns: 1fr;
+  counter-reset: step;
+
+  @include m.respond(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include m.respond(lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.step {
+  display: flex;
+  gap: v.$space-sm;
+  position: relative;
+  padding-top: v.$space-md;
+  border-top: 2px solid v.$color-gray-100;
+
+  h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.3rem;
+  }
+
+  p {
+    font-size: 0.92rem;
+    margin: 0;
+  }
+}
+
+.number {
+  font-family: v.$font-heading;
+  font-weight: 700;
+  font-size: 1rem;
+  color: v.$color-gold-dark;
+  flex-shrink: 0;
+}
+
+.dark {
+  .step {
+    border-top-color: rgba(255, 255, 255, 0.16);
+
+    h3 {
+      color: v.$color-white;
+    }
+
+    p {
+      color: v.$color-gray-300;
+    }
+  }
+
+  .number {
+    color: v.$color-gold-light;
+  }
+}

@@ -5,8 +5,11 @@ import FormField from '../components/FormField/FormField'
 import Honeypot from '../components/Honeypot/Honeypot'
 import FormStatusMessage from '../components/FormStatusMessage/FormStatusMessage'
 import Button from '../components/Button/Button'
+import SectionHeading from '../components/SectionHeading/SectionHeading'
+import FaqAccordion from '../components/FaqAccordion/FaqAccordion'
 import { useInquiryForm } from '../hooks/useInquiryForm'
 import { isRequired, isValidEmail, isValidPhone } from '../lib/validation'
+import { financingFaq } from '../data/faq'
 import styles from './FormPage.module.scss'
 
 interface FinancingValues {
@@ -133,9 +136,16 @@ function Financing() {
 
             <FormStatusMessage
               status={status}
-              successMessage="Thanks! Your financing inquiry has been sent — our finance team will follow up soon."
+              successMessage="Thanks! Your financing inquiry has been sent, our finance team will follow up soon."
             />
           </form>
+        </section>
+
+        <section className={styles.faqSection}>
+          <SectionHeading title="Financing Questions" align="center" />
+          <div className={styles.faqWrap}>
+            <FaqAccordion items={financingFaq} />
+          </div>
         </section>
       </Container>
     </>

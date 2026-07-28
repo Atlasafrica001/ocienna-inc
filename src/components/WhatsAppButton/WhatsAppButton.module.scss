@@ -1,0 +1,44 @@
+@use '../../styles/variables' as v;
+
+.whatsappFloat {
+  position: fixed;
+  bottom: v.$space-lg;
+  right: v.$space-lg;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366; // Standard WhatsApp color
+  color: v.$color-white;
+  border-radius: v.$radius-full;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: v.$shadow-lg;
+  z-index: 100;
+  transition: transform v.$duration-sm v.$ease-out, background-color v.$duration-sm v.$ease-out;
+  animation: pulse 2s infinite ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-4px) scale(1.05);
+    background-color: #128c7e;
+    animation: none;
+    box-shadow: 0 16px 40px rgba(37, 211, 102, 0.4);
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}

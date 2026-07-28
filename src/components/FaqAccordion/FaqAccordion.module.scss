@@ -1,0 +1,52 @@
+@use '../../styles/variables' as v;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-sm;
+}
+
+.item {
+  background: v.$color-off-white;
+  border-radius: v.$radius-md;
+  padding: v.$space-sm v.$space-md;
+  border: 1px solid v.$color-gray-100;
+
+  &[open] {
+    background: v.$color-white;
+    border-color: v.$color-gold;
+    box-shadow: v.$shadow-sm;
+  }
+
+  &[open] .chevron {
+    transform: rotate(180deg);
+  }
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: v.$space-sm;
+  cursor: pointer;
+  list-style: none;
+  font-family: v.$font-heading;
+  font-weight: 600;
+  color: v.$color-navy;
+  padding-block: 0.4rem;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.chevron {
+  color: v.$color-gold-dark;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.answer {
+  margin: 0.6rem 0 0.2rem;
+  font-size: 0.95rem;
+}

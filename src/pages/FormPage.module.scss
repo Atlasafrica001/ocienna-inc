@@ -107,3 +107,15 @@
     color: v.$color-gold;
   }
 }
+
+.faqSection {
+  background: v.$color-off-white;
+  border-radius: v.$radius-lg;
+  padding: v.$space-xl v.$space-md;
+  margin-top: v.$space-xl;
+}
+
+.faqWrap {
+  max-width: v.$container-narrow;
+  margin-top: v.$space-lg;
+}

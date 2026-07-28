@@ -1,12 +1,12 @@
 export const dealership = {
-  name: 'Ociens Inc.',
+  name: 'Ociens Motors Nigeria',
   tagline: 'Premium vehicles. Honest deals. Trusted service.',
-  phone: '(555) 812-4400',
-  email: 'sales@ociensinc.com',
-  address: '4820 Route 9 Auto Row, Riverside, NY 12345',
+  phone: '+234 800 123 4567',
+  email: 'sales@ociens.com.ng',
+  address: '15 Adeola Odeku St, Victoria Island, Lagos, Nigeria',
   hours: [
-    { days: 'Monday – Friday', time: '9:00 AM – 7:00 PM' },
-    { days: 'Saturday', time: '10:00 AM – 5:00 PM' },
+    { days: 'Monday - Friday', time: '8:00 AM - 6:00 PM' },
+    { days: 'Saturday', time: '10:00 AM - 4:00 PM' },
     { days: 'Sunday', time: 'Closed' },
   ],
 }

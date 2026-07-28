@@ -5,9 +5,12 @@ import FormField from '../components/FormField/FormField'
 import Honeypot from '../components/Honeypot/Honeypot'
 import FormStatusMessage from '../components/FormStatusMessage/FormStatusMessage'
 import Button from '../components/Button/Button'
+import SectionHeading from '../components/SectionHeading/SectionHeading'
+import FaqAccordion from '../components/FaqAccordion/FaqAccordion'
 import { useInquiryForm } from '../hooks/useInquiryForm'
 import { isRequired, isValidEmail, isValidPhone } from '../lib/validation'
 import { featuredVehicles } from '../data/vehicles'
+import { testDriveFaq } from '../data/faq'
 import styles from './FormPage.module.scss'
 
 interface TestDriveValues {
@@ -131,9 +134,16 @@ function TestDrive() {
 
             <FormStatusMessage
               status={status}
-              successMessage="Thanks! Your test drive request has been sent — we'll be in touch shortly to confirm."
+              successMessage="Thanks! Your test drive request has been sent, we'll be in touch shortly to confirm."
             />
           </form>
+        </section>
+
+        <section className={styles.faqSection}>
+          <SectionHeading title="Test Drive Questions" align="center" />
+          <div className={styles.faqWrap}>
+            <FaqAccordion items={testDriveFaq} />
+          </div>
         </section>
       </Container>
     </>

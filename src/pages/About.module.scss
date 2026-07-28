@@ -1,8 +1,25 @@
 @use '../styles/variables' as v;
 @use '../styles/mixins' as m;
 
-.story {
-  max-width: 760px;
+.storyGrid {
+  display: grid;
+  gap: v.$space-xl;
+  align-items: center;
+  grid-template-columns: 1fr;
+
+  @include m.respond(lg) {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+.storyMedia {
+  img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: v.$radius-lg;
+    box-shadow: v.$shadow-md;
+  }
 }
 
 .values {
@@ -16,15 +33,15 @@
   margin-top: v.$space-lg;
 
   @include m.respond(md) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.valueCard {
+.milestones {
   background: v.$color-off-white;
-  border-radius: v.$radius-md;
-  padding: v.$space-md;
-  border-top: 3px solid v.$color-gold;
+  border-radius: v.$radius-lg;
+  padding: v.$space-xl v.$space-md;
+  margin-bottom: v.$space-xl;
 }
 
 .ctaSection {

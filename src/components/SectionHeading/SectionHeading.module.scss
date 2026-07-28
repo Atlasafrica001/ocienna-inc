@@ -1,0 +1,41 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.heading {
+  max-width: 640px;
+  margin-bottom: v.$space-lg;
+}
+
+.center {
+  max-width: 620px;
+  margin-inline: auto;
+  text-align: center;
+
+  .eyebrow::before {
+    display: none;
+  }
+}
+
+.eyebrow {
+  @include m.eyebrow;
+  margin-bottom: v.$space-sm;
+}
+
+.subtitle {
+  font-size: 1.08rem;
+  margin: 0;
+}
+
+.dark {
+  h2 {
+    color: v.$color-white;
+  }
+
+  .subtitle {
+    color: v.$color-gray-300;
+  }
+
+  .eyebrow {
+    color: v.$color-gold-light;
+  }
+}

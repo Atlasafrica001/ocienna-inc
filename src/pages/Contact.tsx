@@ -5,9 +5,12 @@ import FormField from '../components/FormField/FormField'
 import Honeypot from '../components/Honeypot/Honeypot'
 import FormStatusMessage from '../components/FormStatusMessage/FormStatusMessage'
 import Button from '../components/Button/Button'
+import SectionHeading from '../components/SectionHeading/SectionHeading'
+import FaqAccordion from '../components/FaqAccordion/FaqAccordion'
 import { useInquiryForm } from '../hooks/useInquiryForm'
 import { isRequired, isValidEmail } from '../lib/validation'
 import { dealership } from '../data/dealership'
+import { contactFaq } from '../data/faq'
 import styles from './FormPage.module.scss'
 
 interface ContactValues {
@@ -106,6 +109,13 @@ function Contact() {
                 successMessage="Thanks for reaching out! We've received your message and will respond soon."
               />
             </form>
+          </div>
+        </section>
+
+        <section className={styles.faqSection}>
+          <SectionHeading title="Common Questions" align="center" />
+          <div className={styles.faqWrap}>
+            <FaqAccordion items={contactFaq} />
           </div>
         </section>
       </Container>

@@ -2,14 +2,24 @@
 @use '../styles/mixins' as m;
 
 .hero {
-  background:
-    linear-gradient(135deg, rgba(10, 31, 68, 0.92) 0%, rgba(6, 20, 40, 0.96) 100%);
+  background: linear-gradient(135deg, rgba(4, 12, 26, 0.98) 0%, rgba(10, 31, 68, 0.96) 50%, rgba(4, 12, 26, 0.98) 100%);
   padding-block: v.$space-2xl;
+  overflow: hidden;
+}
+
+.heroGrid {
+  display: grid;
+  gap: v.$space-xl;
+  align-items: center;
+  grid-template-columns: 1fr;
+
+  @include m.respond(lg) {
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: v.$space-2xl;
+  }
 }
 
 .heroContent {
-  max-width: 640px;
-
   h1 {
     color: v.$color-white;
   }
@@ -17,6 +27,22 @@
   p {
     color: v.$color-gray-300;
     font-size: 1.1rem;
+    max-width: 46ch;
+  }
+}
+
+.heroMedia {
+  img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: v.$radius-lg;
+    box-shadow: v.$shadow-lg;
+  }
+
+  @include m.respond(lg) {
+    justify-self: end;
+    max-width: 560px;
   }
 }
 
@@ -27,6 +53,11 @@
   margin-top: v.$space-md;
 }
 
+.statSection {
+  background: v.$color-navy-dark;
+  padding-block: v.$space-lg;
+}
+
 .vehicleGrid {
   display: grid;
   gap: v.$space-lg;
@@ -34,30 +65,56 @@
   margin-top: v.$space-lg;
 
   @include m.respond(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include m.respond(lg) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .vehicleCard {
-  background: v.$color-off-white;
-  border-radius: v.$radius-md;
+  background: v.$color-white;
+  border-radius: v.$radius-lg;
   overflow: hidden;
   box-shadow: v.$shadow-sm;
   display: flex;
   flex-direction: column;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid v.$color-gray-100;
+
+  &:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: v.$shadow-lg;
+  }
 }
 
 .vehicleImage {
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, v.$color-navy 0%, v.$color-navy-light 100%);
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: v.$color-navy;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.vehicleCategory {
+  position: absolute;
+  top: v.$space-xs;
+  left: v.$space-xs;
+  background: rgba(4, 12, 26, 0.72);
   color: v.$color-gold-light;
   font-family: v.$font-heading;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding: 0.3rem 0.65rem;
+  border-radius: v.$radius-full;
 }
 
 .vehicleBody {
@@ -68,13 +125,47 @@
 }
 
 .vehiclePrice {
-  color: v.$color-gold;
+  color: v.$color-gold-dark;
   font-weight: 600;
   margin: 0;
 }
 
-.testimonialSection {
+.vehicleSpecs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: v.$space-xs v.$space-sm;
+  margin: 0.2rem 0 v.$space-xs;
+  font-size: 0.78rem;
+  color: v.$color-gray-700;
+
+  li {
+    background: v.$color-gray-100;
+    padding: 0.2rem 0.55rem;
+    border-radius: v.$radius-full;
+  }
+}
+
+.whySection {
   background: v.$color-off-white;
+}
+
+.whyGrid {
+  display: grid;
+  gap: v.$space-lg;
+  grid-template-columns: 1fr;
+  margin-top: v.$space-lg;
+
+  @include m.respond(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.processSection {
+  background: v.$color-navy;
+}
+
+.testimonialSection {
+  background: v.$color-white;
 }
 
 .testimonialGrid {
@@ -90,11 +181,10 @@
 
 .testimonial {
   margin: 0;
-  background: v.$color-white;
+  background: v.$color-off-white;
   border-left: 3px solid v.$color-gold;
   border-radius: v.$radius-sm;
   padding: v.$space-md;
-  box-shadow: v.$shadow-sm;
 
   p {
     font-style: italic;
@@ -106,6 +196,24 @@
     font-weight: 600;
     font-size: 0.9rem;
     color: v.$color-navy;
+  }
+}
+
+.testimonialFeatured {
+  background: v.$color-navy;
+  border-left-color: v.$color-gold-light;
+
+  @include m.respond(md) {
+    grid-column: 1 / -1;
+  }
+
+  p {
+    color: v.$color-white;
+    font-size: 1.2rem;
+  }
+
+  footer {
+    color: v.$color-gold-light;
   }
 }
 
@@ -121,7 +229,7 @@
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: v.$space-sm;
+  margin-bottom: v.$space-md;
 }
 
 .brandsList {
@@ -129,9 +237,42 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: v.$space-lg;
+}
+
+.brandMark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
   color: v.$color-gray-500;
-  font-family: v.$font-heading;
+
+  svg {
+    circle {
+      stroke: v.$color-gray-300;
+    }
+
+    text {
+      fill: v.$color-navy;
+      font-family: v.$font-heading;
+      font-weight: 700;
+    }
+  }
+}
+
+.brandName {
+  font-size: 0.78rem;
   font-weight: 600;
+  color: v.$color-gray-500;
+}
+
+.faqSection {
+  background: v.$color-off-white;
+}
+
+.faqWrap {
+  max-width: v.$container-narrow;
+  margin-inline: auto;
+  margin-top: v.$space-lg;
 }
 
 .ctaSection {

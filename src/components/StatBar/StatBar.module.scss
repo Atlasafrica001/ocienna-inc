@@ -1,0 +1,33 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: v.$space-lg;
+  margin: 0;
+
+  @include m.respond(md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat {
+  text-align: center;
+}
+
+.value {
+  font-family: v.$font-heading;
+  font-weight: 700;
+  font-size: clamp(1.9rem, 3vw, 2.75rem);
+  color: v.$color-gold-light;
+  margin: 0;
+}
+
+.label {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: v.$color-gray-300;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}

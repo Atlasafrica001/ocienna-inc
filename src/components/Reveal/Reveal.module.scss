@@ -1,0 +1,18 @@
+@use '../../styles/variables' as v;
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity v.$duration-lg v.$ease-out, transform v.$duration-lg v.$ease-out;
+
+  @media (prefers-reduced-motion: reduce) {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,44 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.card {
+  @include m.card;
+  @include m.card-hover;
+  padding: v.$space-lg v.$space-md;
+  border: 1px solid v.$color-gray-100;
+
+  h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1.15rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+}
+
+.iconWrap {
+  @include m.icon-circle(52px);
+  background: v.$color-gold-tint;
+  color: v.$color-gold-dark;
+  margin-bottom: v.$space-md;
+}
+
+.dark {
+  background: v.$color-navy-light;
+  border-color: rgba(255, 255, 255, 0.08);
+
+  h3, p {
+    color: v.$color-white;
+  }
+
+  p {
+    color: v.$color-gray-300;
+  }
+
+  .iconWrap {
+    background: rgba(201, 162, 39, 0.16);
+    color: v.$color-gold-light;
+  }
+}
