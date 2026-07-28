@@ -1,0 +1,56 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.footer {
+  background: v.$color-navy-dark;
+  color: v.$color-gray-300;
+  padding-block: v.$space-xl v.$space-md;
+}
+
+.inner {
+  @include m.container;
+  display: grid;
+  gap: v.$space-lg;
+  grid-template-columns: 1fr;
+
+  @include m.respond(md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  h3 {
+    color: v.$color-white;
+    font-size: 1rem;
+    margin-bottom: v.$space-sm;
+  }
+
+  p {
+    color: v.$color-gray-300;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  a:hover {
+    color: v.$color-gold;
+  }
+}
+
+.brand {
+  font-family: v.$font-heading;
+  font-weight: 700;
+  color: v.$color-white;
+  font-size: 1.15rem;
+  margin-bottom: v.$space-xs;
+}
+
+.copyright {
+  @include m.container;
+  margin-top: v.$space-lg;
+  padding-top: v.$space-md;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+  color: v.$color-gray-500;
+}

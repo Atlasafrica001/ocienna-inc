@@ -1,0 +1,48 @@
+@use '../styles/variables' as v;
+@use '../styles/mixins' as m;
+
+.story {
+  max-width: 760px;
+}
+
+.values {
+  padding-block-start: 0;
+}
+
+.valuesGrid {
+  display: grid;
+  gap: v.$space-lg;
+  grid-template-columns: 1fr;
+  margin-top: v.$space-lg;
+
+  @include m.respond(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.valueCard {
+  background: v.$color-off-white;
+  border-radius: v.$radius-md;
+  padding: v.$space-md;
+  border-top: 3px solid v.$color-gold;
+}
+
+.ctaSection {
+  text-align: center;
+  background: v.$color-navy;
+  border-radius: v.$radius-lg;
+  padding: v.$space-xl v.$space-md;
+  margin-bottom: v.$space-xl;
+
+  h2, p {
+    color: v.$color-white;
+  }
+}
+
+.ctaActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: v.$space-sm;
+  margin-top: v.$space-md;
+}

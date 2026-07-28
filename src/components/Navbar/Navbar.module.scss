@@ -1,0 +1,114 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: v.$color-white;
+  box-shadow: v.$shadow-sm;
+}
+
+.bar {
+  @include m.container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4.5rem;
+}
+
+.brand {
+  font-family: v.$font-heading;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: v.$color-navy;
+  letter-spacing: 0.02em;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 110;
+
+  @include m.respond(lg) {
+    display: none;
+  }
+}
+
+.toggleBar {
+  width: 24px;
+  height: 2px;
+  background: v.$color-navy;
+  border-radius: 2px;
+}
+
+.nav {
+  position: fixed;
+  inset: 0 0 0 30%;
+  background: v.$color-navy;
+  display: flex;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.25s ease;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: v.$space-md;
+    padding: v.$space-lg;
+    width: 100%;
+  }
+
+  @include m.respond(lg) {
+    position: static;
+    inset: auto;
+    background: none;
+    transform: none;
+    transition: none;
+
+    ul {
+      flex-direction: row;
+      align-items: center;
+      gap: v.$space-lg;
+      padding: 0;
+    }
+  }
+}
+
+.navOpen {
+  transform: translateX(0);
+}
+
+.link {
+  display: inline-block;
+  font-weight: 500;
+  color: v.$color-white;
+  padding: 0.35rem 0;
+  border-bottom: 2px solid transparent;
+
+  @include m.respond(lg) {
+    color: v.$color-navy-dark;
+  }
+
+  &:hover {
+    color: v.$color-gold-light;
+
+    @include m.respond(lg) {
+      color: v.$color-gold;
+    }
+  }
+}
+
+.linkActive {
+  border-bottom-color: v.$color-gold;
+  color: v.$color-gold-light;
+
+  @include m.respond(lg) {
+    color: v.$color-navy;
+  }
+}

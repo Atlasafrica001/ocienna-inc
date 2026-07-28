@@ -1,0 +1,153 @@
+@use '../styles/variables' as v;
+@use '../styles/mixins' as m;
+
+.hero {
+  background:
+    linear-gradient(135deg, rgba(10, 31, 68, 0.92) 0%, rgba(6, 20, 40, 0.96) 100%);
+  padding-block: v.$space-2xl;
+}
+
+.heroContent {
+  max-width: 640px;
+
+  h1 {
+    color: v.$color-white;
+  }
+
+  p {
+    color: v.$color-gray-300;
+    font-size: 1.1rem;
+  }
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: v.$space-sm;
+  margin-top: v.$space-md;
+}
+
+.vehicleGrid {
+  display: grid;
+  gap: v.$space-lg;
+  grid-template-columns: 1fr;
+  margin-top: v.$space-lg;
+
+  @include m.respond(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.vehicleCard {
+  background: v.$color-off-white;
+  border-radius: v.$radius-md;
+  overflow: hidden;
+  box-shadow: v.$shadow-sm;
+  display: flex;
+  flex-direction: column;
+}
+
+.vehicleImage {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, v.$color-navy 0%, v.$color-navy-light 100%);
+  color: v.$color-gold-light;
+  font-family: v.$font-heading;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.vehicleBody {
+  padding: v.$space-md;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.vehiclePrice {
+  color: v.$color-gold;
+  font-weight: 600;
+  margin: 0;
+}
+
+.testimonialSection {
+  background: v.$color-off-white;
+}
+
+.testimonialGrid {
+  display: grid;
+  gap: v.$space-lg;
+  grid-template-columns: 1fr;
+  margin-top: v.$space-lg;
+
+  @include m.respond(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonial {
+  margin: 0;
+  background: v.$color-white;
+  border-left: 3px solid v.$color-gold;
+  border-radius: v.$radius-sm;
+  padding: v.$space-md;
+  box-shadow: v.$shadow-sm;
+
+  p {
+    font-style: italic;
+    color: v.$color-navy-dark;
+  }
+
+  footer {
+    margin-top: v.$space-xs;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: v.$color-navy;
+  }
+}
+
+.brandsSection {
+  padding-block: v.$space-lg;
+  border-top: 1px solid v.$color-gray-100;
+  border-bottom: 1px solid v.$color-gray-100;
+}
+
+.brandsLabel {
+  text-align: center;
+  color: v.$color-gray-500;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: v.$space-sm;
+}
+
+.brandsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: v.$space-lg;
+  color: v.$color-gray-500;
+  font-family: v.$font-heading;
+  font-weight: 600;
+}
+
+.ctaSection {
+  background: v.$color-navy;
+}
+
+.ctaInner {
+  text-align: center;
+  max-width: 640px;
+  margin-inline: auto;
+
+  h2, p {
+    color: v.$color-white;
+  }
+
+  .heroActions {
+    justify-content: center;
+  }
+}

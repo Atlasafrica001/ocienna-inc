@@ -1,0 +1,43 @@
+// Color palette — modern premium automotive style
+$color-navy: #0a1f44;
+$color-navy-light: #14315e;
+$color-navy-dark: #061428;
+$color-gold: #c9a227;
+$color-gold-light: #e0bf4f;
+$color-white: #ffffff;
+$color-off-white: #f7f7f9;
+$color-gray-100: #eceef2;
+$color-gray-300: #c7cbd4;
+$color-gray-500: #8a90a0;
+$color-gray-700: #4b5163;
+$color-error: #c0392b;
+$color-success: #1e8f4e;
+
+// Typography
+$font-heading: 'Poppins', sans-serif;
+$font-body: 'Inter', sans-serif;
+
+// Spacing scale
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2.5rem;
+$space-xl: 4rem;
+$space-2xl: 6rem;
+
+// Layout
+$container-max: 1200px;
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 16px;
+
+// Breakpoints
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+
+// Shadows
+$shadow-sm: 0 2px 8px rgba(10, 31, 68, 0.08);
+$shadow-md: 0 8px 24px rgba(10, 31, 68, 0.12);
+$shadow-lg: 0 16px 40px rgba(10, 31, 68, 0.16);

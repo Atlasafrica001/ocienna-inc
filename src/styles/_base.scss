@@ -1,0 +1,81 @@
+@use 'variables' as v;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: v.$font-body;
+  color: v.$color-navy-dark;
+  background-color: v.$color-white;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: v.$font-heading;
+  color: v.$color-navy;
+  line-height: 1.2;
+  margin: 0 0 v.$space-sm;
+}
+
+h1 { font-size: clamp(2rem, 4vw + 1rem, 3.25rem); }
+h2 { font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem); }
+h3 { font-size: 1.35rem; }
+
+p {
+  margin: 0 0 v.$space-sm;
+  color: v.$color-gray-700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:focus-visible {
+  outline: 3px solid v.$color-gold;
+  outline-offset: 2px;
+}
+
+section {
+  padding-block: v.$space-xl;
+}
+
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: v.$space-sm;
+  background: v.$color-navy;
+  color: v.$color-white;
+  padding: 0.75rem 1.25rem;
+  border-radius: v.$radius-sm;
+  z-index: 1000;
+  transition: top 0.2s ease;
+
+  &:focus {
+    top: v.$space-sm;
+  }
+}

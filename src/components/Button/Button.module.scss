@@ -1,0 +1,34 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.button {
+  @include m.button-base;
+}
+
+.primary {
+  background: v.$color-gold;
+  color: v.$color-navy-dark;
+
+  &:hover {
+    background: v.$color-gold-light;
+  }
+}
+
+.secondary {
+  background: v.$color-navy;
+  color: v.$color-white;
+
+  &:hover {
+    background: v.$color-navy-light;
+  }
+}
+
+.ghost {
+  background: transparent;
+  border-color: v.$color-white;
+  color: v.$color-white;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}

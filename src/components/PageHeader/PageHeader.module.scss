@@ -1,0 +1,22 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.header {
+  background: linear-gradient(135deg, v.$color-navy 0%, v.$color-navy-dark 100%);
+  padding-block: v.$space-xl;
+}
+
+.inner {
+  @include m.container;
+  max-width: 760px;
+
+  h1 {
+    color: v.$color-white;
+  }
+
+  p {
+    color: v.$color-gray-300;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+}

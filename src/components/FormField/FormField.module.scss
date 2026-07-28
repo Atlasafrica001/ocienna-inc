@@ -1,0 +1,45 @@
+@use '../../styles/variables' as v;
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: v.$space-sm;
+
+  label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: v.$color-navy;
+  }
+
+  input,
+  textarea {
+    font: inherit;
+    padding: 0.75rem 0.9rem;
+    border: 1.5px solid v.$color-gray-300;
+    border-radius: v.$radius-sm;
+    background: v.$color-off-white;
+    color: v.$color-navy-dark;
+    resize: vertical;
+
+    &:focus {
+      outline: none;
+      border-color: v.$color-gold;
+      background: v.$color-white;
+    }
+
+    &[aria-invalid='true'] {
+      border-color: v.$color-error;
+    }
+  }
+}
+
+.required {
+  color: v.$color-error;
+}
+
+.error {
+  margin: 0;
+  font-size: 0.82rem;
+  color: v.$color-error;
+}

@@ -1,0 +1,19 @@
+@use '../../styles/variables' as v;
+
+.success {
+  margin-top: v.$space-sm;
+  padding: 0.85rem 1rem;
+  border-radius: v.$radius-sm;
+  background: rgba(30, 143, 78, 0.1);
+  color: v.$color-success;
+  font-weight: 500;
+}
+
+.error {
+  margin-top: v.$space-sm;
+  padding: 0.85rem 1rem;
+  border-radius: v.$radius-sm;
+  background: rgba(192, 57, 43, 0.1);
+  color: v.$color-error;
+  font-weight: 500;
+}

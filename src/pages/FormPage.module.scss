@@ -1,0 +1,109 @@
+@use '../styles/variables' as v;
+
+.section {
+  padding-block: v.$space-xl;
+}
+
+.form {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+
+  select {
+    font: inherit;
+    padding: 0.75rem 0.9rem;
+    border: 1.5px solid v.$color-gray-300;
+    border-radius: v.$radius-sm;
+    background: v.$color-off-white;
+    color: v.$color-navy-dark;
+
+    &:focus {
+      outline: none;
+      border-color: v.$color-gold;
+      background: v.$color-white;
+    }
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: v.$space-sm;
+
+  label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: v.$color-navy;
+  }
+}
+
+.error {
+  margin: 0;
+  font-size: 0.82rem;
+  color: v.$color-error;
+}
+
+.intro {
+  max-width: 720px;
+  margin-bottom: v.$space-lg;
+
+  p {
+    font-size: 1.05rem;
+  }
+}
+
+.infoGrid {
+  display: grid;
+  gap: v.$space-lg;
+  grid-template-columns: 1fr;
+  margin-bottom: v.$space-xl;
+
+  @media (min-width: v.$bp-md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.infoCard {
+  background: v.$color-off-white;
+  border-radius: v.$radius-md;
+  padding: v.$space-md;
+  border-top: 3px solid v.$color-gold;
+
+  h3 {
+    margin-bottom: 0.4rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+}
+
+.contactGrid {
+  display: grid;
+  gap: v.$space-xl;
+  grid-template-columns: 1fr;
+
+  @media (min-width: v.$bp-lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contactDetails {
+  h3 {
+    margin-top: v.$space-md;
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  a:hover {
+    color: v.$color-gold;
+  }
+}
