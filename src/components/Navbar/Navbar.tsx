@@ -33,6 +33,14 @@ function Navbar() {
           <span className={styles.toggleBar} />
         </button>
 
+        {isOpen && (
+          <div
+            className={styles.backdrop}
+            onClick={() => setIsOpen(false)}
+            aria-hidden="true"
+          />
+        )}
+
         <nav
           id="primary-navigation"
           className={`${styles.nav} ${isOpen ? styles.navOpen : ''}`}

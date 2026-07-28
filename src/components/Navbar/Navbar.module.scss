@@ -40,6 +40,22 @@
   @include m.respond(lg) {
     display: none;
   }
+
+  &[aria-expanded="true"] {
+    .toggleBar {
+      background: v.$color-white;
+    }
+    
+    .toggleBar:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .toggleBar:nth-child(2) {
+      opacity: 0;
+    }
+    .toggleBar:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
 }
 
 .toggleBar {
@@ -47,11 +63,25 @@
   height: 2px;
   background: v.$color-navy;
   border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 12, 26, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 104;
+  
+  @include m.respond(lg) {
+    display: none;
+  }
 }
 
 .nav {
   position: fixed;
   inset: 0 0 0 30%;
+  z-index: 105;
   background: v.$color-navy;
   display: flex;
   align-items: center;
