@@ -38,10 +38,10 @@ function About() {
     <>
       <Seo
         title="About Us"
-        description="Learn about Ocean Inc., a locally trusted car dealership committed to transparent pricing and honest service."
+        description="Learn about Ocienna Inc., a locally trusted car dealership committed to transparent pricing and honest service."
       />
       <PageHeader
-        title="About Ocean Inc."
+        title="About Ocienna Inc."
         subtitle="A dealership built on trust, transparency, and treating every customer like family."
       />
       <Container>
@@ -50,7 +50,7 @@ function About() {
             <Reveal>
               <h2>Our Story</h2>
               <p>
-                Ocean Inc. was founded with a simple goal: make car buying straightforward and
+                Ocienna Inc. was founded with a simple goal: make car buying straightforward and
                 stress-free. We know purchasing a vehicle is a big decision, so our team focuses on
                 honest advice, fair pricing, and a no-pressure experience, whether you walk in or
                 visit us online.

@@ -30,7 +30,7 @@ function Home() {
     <>
       <Seo
         title="Home"
-        description="Ocean Inc. is a premium car dealership offering quality vehicles, flexible financing, and easy test drive booking."
+        description="Ocienna Inc. is a premium car dealership offering quality vehicles, flexible financing, and easy test drive booking."
       />
 
       <section className={styles.hero}>
@@ -52,7 +52,7 @@ function Home() {
             <Reveal className={styles.heroMedia} delay={120}>
               <img
                 src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1200&q=80"
-                alt="Rows of vehicles for sale on the Ocean Inc. dealership lot"
+                alt="Rows of vehicles for sale on the Ocienna Inc. dealership lot"
                 width={960}
                 height={699}
                 loading="eager"
@@ -105,7 +105,7 @@ function Home() {
       <section className={styles.whySection}>
         <Container>
           <SectionHeading
-            title="Why Buyers Choose Ocean Inc."
+            title="Why Buyers Choose Ocienna Inc."
             subtitle="Fifteen years of the same four commitments, whether it's your first car or your company's fifth fleet vehicle."
           />
           <div className={styles.whyGrid}>

@@ -30,7 +30,7 @@ export const buyingSteps: ProcessStep[] = [
 export const milestones: ProcessStep[] = [
   {
     title: '2011',
-    body: 'Ocean Inc. opens its doors as a small independent lot in Ikeja with twelve vehicles and a promise of honest pricing.',
+    body: 'Ocienna Inc. opens its doors as a small independent lot in Ikeja with twelve vehicles and a promise of honest pricing.',
   },
   {
     title: '2015',
