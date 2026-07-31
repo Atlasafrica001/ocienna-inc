@@ -7,10 +7,10 @@
 
 .primary {
   background: v.$color-gold;
-  color: v.$color-navy-dark;
+  color: v.$color-white;
 
   &:hover {
-    background: v.$color-gold-light;
+    background: v.$color-gold-dark;
   }
 }
 

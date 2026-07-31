@@ -2,7 +2,7 @@
 @use '../styles/mixins' as m;
 
 .hero {
-  background: linear-gradient(135deg, rgba(4, 12, 26, 0.98) 0%, rgba(10, 31, 68, 0.96) 50%, rgba(4, 12, 26, 0.98) 100%);
+  background: linear-gradient(135deg, rgba(6, 5, 4, 0.98) 0%, rgba(44, 40, 36, 0.96) 50%, rgba(6, 5, 4, 0.98) 100%);
   padding-block: v.$space-lg;
   overflow: hidden;
   max-height: 100vh;
@@ -126,7 +126,7 @@
   position: absolute;
   top: v.$space-xs;
   left: v.$space-xs;
-  background: rgba(4, 12, 26, 0.72);
+  background: rgba(6, 5, 4, 0.72);
   color: v.$color-gold-light;
   font-family: v.$font-heading;
   font-weight: 600;
