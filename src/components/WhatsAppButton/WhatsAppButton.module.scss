@@ -5,35 +5,31 @@
   position: fixed;
   bottom: v.$space-md;
   right: v.$space-md;
-  width: 60px;
-  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: transform v.$duration-sm v.$ease-out;
+  animation: pulse 2s infinite ease-in-out;
+  border-radius: v.$radius-full;
+  box-shadow: v.$shadow-lg;
 
   @include m.respond(md) {
     bottom: v.$space-lg;
     right: v.$space-lg;
   }
-  background-color: #25d366; // Standard WhatsApp color
-  color: v.$color-white;
-  border-radius: v.$radius-full;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: v.$shadow-lg;
-  z-index: 100;
-  transition: transform v.$duration-sm v.$ease-out, background-color v.$duration-sm v.$ease-out;
-  animation: pulse 2s infinite ease-in-out;
 
   &:hover,
   &:focus-visible {
     transform: translateY(-4px) scale(1.05);
-    background-color: #128c7e;
     animation: none;
     box-shadow: 0 16px 40px rgba(37, 211, 102, 0.4);
   }
 
   svg {
-    width: 32px;
-    height: 32px;
+    width: 60px;
+    height: 60px;
+    display: block;
   }
 }
 
