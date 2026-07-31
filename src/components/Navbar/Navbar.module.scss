@@ -27,11 +27,20 @@
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
   font-family: v.$font-heading;
   font-weight: 700;
   font-size: 1.25rem;
   color: v.$color-navy;
   letter-spacing: 0.02em;
+}
+
+.brandMark {
+  display: block;
+  height: 28px;
+  width: auto;
 }
 
 .toggle {

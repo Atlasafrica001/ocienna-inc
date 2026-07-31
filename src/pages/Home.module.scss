@@ -3,13 +3,20 @@
 
 .hero {
   background: linear-gradient(135deg, rgba(4, 12, 26, 0.98) 0%, rgba(10, 31, 68, 0.96) 50%, rgba(4, 12, 26, 0.98) 100%);
-  padding-block: v.$space-2xl;
+  padding-block: v.$space-lg;
   overflow: hidden;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  @include m.respond(lg) {
+    padding-block: v.$space-xl;
+  }
 }
 
 .heroGrid {
   display: grid;
-  gap: v.$space-xl;
+  gap: v.$space-md;
   align-items: center;
   grid-template-columns: 1fr;
 
@@ -22,22 +29,35 @@
 .heroContent {
   h1 {
     color: v.$color-white;
+    font-size: clamp(1.75rem, 3.5vw + 0.5rem, 3.75rem);
   }
 
   p {
     color: v.$color-gray-300;
-    font-size: 1.1rem;
+    font-size: 1rem;
     max-width: 46ch;
+
+    @include m.respond(lg) {
+      font-size: 1.1rem;
+    }
   }
 }
 
 .heroMedia {
   img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    max-height: 280px;
     object-fit: cover;
     border-radius: v.$radius-lg;
     box-shadow: v.$shadow-lg;
+
+    @include m.respond(md) {
+      max-height: 360px;
+    }
+
+    @include m.respond(lg) {
+      max-height: 420px;
+    }
   }
 
   @include m.respond(lg) {

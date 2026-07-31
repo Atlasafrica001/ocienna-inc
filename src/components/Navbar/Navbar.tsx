@@ -17,6 +17,7 @@ function Navbar() {
     <header className={styles.header}>
       <div className={styles.bar}>
         <NavLink to="/" className={styles.brand} onClick={() => setIsOpen(false)}>
+          <img src="/logo-icon.png" alt="" width={48} height={29} className={styles.brandMark} />
           {dealership.name}
         </NavLink>
 
