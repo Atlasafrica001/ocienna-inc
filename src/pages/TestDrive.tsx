@@ -49,7 +49,7 @@ function TestDrive() {
     <>
       <Seo
         title="Book a Test Drive"
-        description="Schedule a test drive with Ocienna Inc. Pick your vehicle and preferred time, and our team will confirm your appointment."
+        description="Schedule a test drive with Ocienns Inc. Pick your vehicle and preferred time, and our team will confirm your appointment."
       />
       <PageHeader
         title="Book a Test Drive"

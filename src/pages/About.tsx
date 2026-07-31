@@ -38,10 +38,10 @@ function About() {
     <>
       <Seo
         title="About Us"
-        description="Learn about Ocienna Inc., a locally trusted car dealership committed to transparent pricing and honest service."
+        description="Learn about Ocienns Inc., a locally trusted car dealership committed to transparent pricing and honest service."
       />
       <PageHeader
-        title="About Ocienna Inc."
+        title="About Ocienns Inc."
         subtitle="A dealership built on trust, transparency, and treating every customer like family."
       />
       <Container>
@@ -50,7 +50,7 @@ function About() {
             <Reveal>
               <h2>Our Story</h2>
               <p>
-                Ocienna Inc. was founded with a simple goal: make car buying straightforward and
+                Ocienns Inc. was founded with a simple goal: make car buying straightforward and
                 stress-free. We know purchasing a vehicle is a big decision, so our team focuses on
                 honest advice, fair pricing, and a no-pressure experience, whether you walk in or
                 visit us online.

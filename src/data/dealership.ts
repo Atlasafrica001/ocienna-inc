@@ -1,5 +1,5 @@
 export const dealership = {
-  name: 'Ocienna Inc.',
+  name: 'Ocienns Inc.',
   tagline: 'Premium vehicles. Honest deals. Trusted service.',
   phone: '+1 (587) 435-0844',
   email: 'sales@oceaninc.com',

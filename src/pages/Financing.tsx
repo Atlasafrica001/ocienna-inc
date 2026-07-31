@@ -61,7 +61,7 @@ function Financing() {
     <>
       <Seo
         title="Car Financing"
-        description="Explore flexible car financing options at Ocienna Inc. Submit an inquiry and our finance team will help find the right plan for you."
+        description="Explore flexible car financing options at Ocienns Inc. Submit an inquiry and our finance team will help find the right plan for you."
       />
       <PageHeader
         title="Car Financing"
